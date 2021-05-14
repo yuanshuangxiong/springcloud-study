@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      name: config-eureka  #从远程获取
+      label: master
+      profile: dev
+      uri: http://localhost:3344
+
+

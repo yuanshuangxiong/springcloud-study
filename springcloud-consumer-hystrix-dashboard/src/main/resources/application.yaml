@@ -1,0 +1,10 @@
+server:
+  port: 9001
+
+eureka:
+  client:
+    fetch-registry: true #是否从服务注册中心获取服务，为true时会检查所有服务
+    register-with-eureka: false #表示是否向eureka注册中心注册自己
+    service-url: #获取的服务注册中心地址
+      defaultZone: http://eureka7001:7001/eureka/,http://eureka7002:7002/eureka/,http://eureka7003:7003/eureka/
+#Eureka配置

@@ -1,0 +1,8 @@
+#系统级别配置
+spring:
+  cloud:
+    config:
+      name: config-server #需要从git读取的资源名称，不要后缀
+      uri: http://localhost:3344 #连接config-server服务器，然后通过服务器获取github资源
+      profile: dev
+      label: master #从master分支获取

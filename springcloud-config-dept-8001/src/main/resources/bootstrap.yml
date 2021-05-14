@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      name: config-dept  #从远程获取
+      label: master
+      profile: test
+      uri: http://localhost:3344
+
+
